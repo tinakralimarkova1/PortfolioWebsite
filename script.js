@@ -3,6 +3,8 @@ const tabRoot = document.querySelector("[data-tabs]");
 if (tabRoot) {
   const tabs = Array.from(tabRoot.querySelectorAll('[role="tab"]'));
   const panels = Array.from(tabRoot.querySelectorAll('[role="tabpanel"]'));
+  const projectLinks = Array.from(tabRoot.querySelectorAll(".project-link"));
+  const preview = tabRoot.querySelector("#project-preview");
 
   const activateTab = (nextTab) => {
     tabs.forEach((tab) => {
@@ -40,5 +42,19 @@ if (tabRoot) {
     });
 
     if (index !== 0) tab.tabIndex = -1;
+  });
+
+  projectLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!preview) return;
+
+      const title = link.dataset.project;
+      const details = link.dataset.details;
+      const previewTitle = preview.querySelector("h3");
+      const previewText = preview.querySelector("p");
+
+      if (title && previewTitle) previewTitle.textContent = title;
+      if (details && previewText) previewText.textContent = details;
+    });
   });
 }

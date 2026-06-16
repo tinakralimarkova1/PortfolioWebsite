@@ -11,79 +11,126 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Portfolio home">
-        <span class="brand-mark">CS</span>
-        <span>Portfolio</span>
+        <span class="brand-glyph">tk</span>
+        <span class="brand-text">portfolio</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Recent CS Graduate</p>
-          <h1 id="hero-title">Building thoughtful software across data, media, and machines.</h1>
-          <p class="hero-intro">
-            I like turning technical ideas into experiences people can explore:
-            clear visual systems, interactive tools, and robotics projects that
-            connect code to the physical world.
-          </p>
-          <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Get in Touch</a>
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="mono-label">recent cs graduate / west coast-ish internet</p>
+            <h1 id="hero-title">
+              I make small systems that feel curious, visual, and alive.
+            </h1>
+            <p class="hero-intro">
+              My work moves between data visualization, interactive media, and
+              robotics: places where code can explain something, invite play,
+              or make a machine behave a little more gracefully.
+            </p>
+            <div class="hero-actions" aria-label="Portfolio actions">
+              <a class="button primary" href="#projects">See the work</a>
+              <a class="button secondary" href="#contact">Say hi</a>
+            </div>
           </div>
+
+          <aside class="signal-panel" aria-label="Portfolio signal panel">
+            <img
+              src="assets/portfolio-hero.png"
+              alt="A clean desk with a laptop showing abstract visualizations and a small robotics component."
+            >
+            <div class="signal-readout">
+              <span>status</span>
+              <strong>open to building</strong>
+            </div>
+          </aside>
         </div>
-        <figure class="hero-media">
-          <img
-            src="assets/portfolio-hero.png"
-            alt="A clean desk with a laptop showing abstract visualizations and a small robotics component."
-          >
-        </figure>
       </section>
 
       <section id="about" class="section about-section" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">A concise intro you can personalize later.</h2>
+        <div class="section-marker">01 / about</div>
+        <div class="about-layout">
+          <div>
+            <h2 id="about-title">Short version</h2>
+            <p>
+              I’m a recent computer science graduate interested in practical,
+              expressive software: interfaces that make information clearer,
+              experiments that respond to people, and robotics projects that
+              turn algorithms into movement.
+            </p>
+          </div>
+          <div class="interests-block">
+            <h3>Interests</h3>
+            <ul class="pill-list" aria-label="Interests">
+              <li>creative tools</li>
+              <li>visual systems</li>
+              <li>human-computer interaction</li>
+              <li>robot perception</li>
+              <li>simulation</li>
+              <li>playful interfaces</li>
+            </ul>
+          </div>
         </div>
-        <div class="about-grid">
+      </section>
+
+      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+        <div class="section-marker">02 / skills</div>
+        <div class="section-topline">
+          <h2 id="skills-title">What I work with</h2>
           <p>
-            I am a recent computer science graduate interested in making software
-            that is visual, interactive, and grounded in real-world problem
-            solving. My work sits at the intersection of full-stack engineering,
-            creative coding, data storytelling, and robotics.
+            A flexible toolkit for prototypes, class projects, research ideas,
+            and production-ready web pieces.
           </p>
-          <p>
-            This first version is intentionally simple: it gives us a clean
-            structure to build on, then we can swap in your real bio, project
-            details, resume link, photos, and deployment domain.
-          </p>
-          <ul class="skill-list" aria-label="Focus areas">
-            <li>Data visualization</li>
-            <li>Interactive media</li>
-            <li>Robotics systems</li>
-            <li>Frontend development</li>
-            <li>Python and JavaScript</li>
-            <li>Human-centered tools</li>
-          </ul>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-number">01</span>
+            <h3>Languages</h3>
+            <p>Python, JavaScript, TypeScript, C++, Java, SQL</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number">02</span>
+            <h3>Frontend</h3>
+            <p>HTML, CSS, React, Canvas, accessible UI, responsive layouts</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number">03</span>
+            <h3>Data</h3>
+            <p>Pandas, NumPy, D3-style thinking, dashboards, storytelling</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number">04</span>
+            <h3>Robotics</h3>
+            <p>ROS concepts, sensors, control loops, computer vision, simulation</p>
+          </article>
         </div>
       </section>
 
       <section id="projects" class="section projects-section" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">Selected work by category.</h2>
+        <div class="section-marker">03 / projects</div>
+        <div class="section-topline">
+          <h2 id="projects-title">Clickable project shelves</h2>
+          <p>
+            These are placeholders for now, but the structure is ready for real
+            links, GitHub repos, demos, videos, and project writeups.
+          </p>
         </div>
 
         <div class="tabs" data-tabs>
@@ -101,81 +148,94 @@
 
           <div class="tab-panels">
             <div class="project-panel is-active" id="panel-data" role="tabpanel" aria-labelledby="tab-data">
-              <article class="project-card">
-                <p class="project-kicker">Visualization</p>
+              <a class="project-link hot" href="#project-preview" data-project="Exploratory Data Dashboard" data-details="Add the dataset, live dashboard, GitHub repo, and one sentence about the main insight." aria-label="Preview Exploratory Data Dashboard project">
+                <span class="project-type">dashboard</span>
                 <h3>Exploratory Data Dashboard</h3>
-                <p>
-                  A placeholder for a dashboard or analysis project. Add the
-                  dataset, tools, key insight, and a live demo or GitHub link.
-                </p>
-              </article>
-              <article class="project-card">
-                <p class="project-kicker">Storytelling</p>
+                <p>Filters, charts, and a focused story built around a messy dataset.</p>
+                <span class="project-meta">Python / JS / charts</span>
+              </a>
+              <a class="project-link mint" href="#project-preview" data-project="Interactive Chart Essay" data-details="Add a public demo, chart screenshots, and the story arc this project explains." aria-label="Preview Interactive Chart Essay project">
+                <span class="project-type">story</span>
                 <h3>Interactive Chart Essay</h3>
-                <p>
-                  A space for a data story with charts, annotations, and user
-                  controls that make an insight easier to understand.
-                </p>
-              </article>
+                <p>A scrollable explanation with annotations, user controls, and calm visuals.</p>
+                <span class="project-meta">HTML / CSS / data</span>
+              </a>
+              <a class="project-link sky" href="#project-preview" data-project="Data Sketchbook" data-details="Add short visual experiments, process notes, and the best sketches as image thumbnails." aria-label="Preview Data Sketchbook project">
+                <span class="project-type">sketchbook</span>
+                <h3>Data Sketchbook</h3>
+                <p>Small visual experiments for testing mappings, colors, and interaction ideas.</p>
+                <span class="project-meta">visual thinking</span>
+              </a>
             </div>
 
             <div class="project-panel" id="panel-media" role="tabpanel" aria-labelledby="tab-media" hidden>
-              <article class="project-card">
-                <p class="project-kicker">Creative Coding</p>
+              <a class="project-link sky" href="#project-preview" data-project="Browser-Based Interactive Piece" data-details="Add the live interactive demo, a short screen recording, and what user input changes." aria-label="Preview Browser-Based Interactive Piece project">
+                <span class="project-type">creative code</span>
                 <h3>Browser-Based Interactive Piece</h3>
-                <p>
-                  A placeholder for a p5.js, WebGL, audio-reactive, or game-like
-                  project where the user can manipulate the system directly.
-                </p>
-              </article>
-              <article class="project-card">
-                <p class="project-kicker">UX Prototype</p>
+                <p>A playful web experiment with input, motion, and generative behavior.</p>
+                <span class="project-meta">Canvas / JS</span>
+              </a>
+              <a class="project-link hot" href="#project-preview" data-project="Experimental Interface" data-details="Add prototype screens, the interaction question, and what changed after testing." aria-label="Preview Experimental Interface project">
+                <span class="project-type">prototype</span>
                 <h3>Experimental Interface</h3>
-                <p>
-                  A project slot for an interface prototype, installation
-                  concept, or interaction study.
-                </p>
-              </article>
+                <p>A UI prototype exploring unusual navigation, feedback, or collaboration.</p>
+                <span class="project-meta">UX / frontend</span>
+              </a>
+              <a class="project-link mint" href="#project-preview" data-project="Media Toy" data-details="Add the playable toy, notes on the media pipeline, and a quick clip of it in use." aria-label="Preview Media Toy project">
+                <span class="project-type">toy</span>
+                <h3>Media Toy</h3>
+                <p>A tiny interactive tool that lets people poke at sound, image, or motion.</p>
+                <span class="project-meta">interaction</span>
+              </a>
             </div>
 
             <div class="project-panel" id="panel-robotics" role="tabpanel" aria-labelledby="tab-robotics" hidden>
-              <article class="project-card">
-                <p class="project-kicker">Hardware + Software</p>
+              <a class="project-link mint" href="#project-preview" data-project="Autonomous Robotics Build" data-details="Add a demo video, hardware stack, control approach, and the most interesting failure." aria-label="Preview Autonomous Robotics Build project">
+                <span class="project-type">hardware</span>
                 <h3>Autonomous Robotics Build</h3>
-                <p>
-                  Add a robotics project here with sensors, control logic,
-                  simulation notes, and a short demo video or build log.
-                </p>
-              </article>
-              <article class="project-card">
-                <p class="project-kicker">Systems</p>
+                <p>Sensors, control logic, testing notes, and a demo video slot.</p>
+                <span class="project-meta">robotics / C++</span>
+              </a>
+              <a class="project-link sky" href="#project-preview" data-project="Motion or Perception Experiment" data-details="Add simulation clips, sensor inputs, model notes, and before-after behavior." aria-label="Preview Motion or Perception Experiment project">
+                <span class="project-type">perception</span>
                 <h3>Motion or Perception Experiment</h3>
-                <p>
-                  A place to show computer vision, planning, controls, embedded
-                  work, or robot-human interaction research.
-                </p>
-              </article>
+                <p>Computer vision, planning, or simulation work explained visually.</p>
+                <span class="project-meta">CV / simulation</span>
+              </a>
+              <a class="project-link hot" href="#project-preview" data-project="Robot Field Notes" data-details="Add diagrams, build logs, lab notes, and the debugging trail behind the final result." aria-label="Preview Robot Field Notes project">
+                <span class="project-type">notes</span>
+                <h3>Robot Field Notes</h3>
+                <p>Build logs, diagrams, failures, fixes, and the things learned in between.</p>
+                <span class="project-meta">process / systems</span>
+              </a>
             </div>
           </div>
+
+          <aside id="project-preview" class="project-preview" aria-live="polite">
+            <span class="project-preview-label">selected project</span>
+            <h3>Exploratory Data Dashboard</h3>
+            <p>Add the dataset, live dashboard, GitHub repo, and one sentence about the main insight.</p>
+          </aside>
         </div>
       </section>
 
       <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let’s connect.</h2>
+        <div class="section-marker">04 / contact</div>
+        <div class="contact-card">
+          <p class="mono-label">available for projects, internships, and good questions</p>
+          <h2 id="contact-title">Want to build something strange and useful?</h2>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:hello@example.com">Email</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
         </div>
-        <p>
-          Replace these with your real links when you are ready:
-          <a href="mailto:hello@example.com">Email</a>,
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>,
-          and <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>.
-        </p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Designed and built as a living portfolio.</p>
+      <p>Built with HTML, CSS, and a little tab logic.</p>
+      <a href="#top">Back to top</a>
     </footer>
 
     <script src="script.js"></script>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio website for a recent computer science graduate focused on data visualization, interactive media, and robotics."
+    >
+    <title>CS Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Portfolio home">
+        <span class="brand-mark">CS</span>
+        <span>Portfolio</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Recent CS Graduate</p>
+          <h1 id="hero-title">Building thoughtful software across data, media, and machines.</h1>
+          <p class="hero-intro">
+            I like turning technical ideas into experiences people can explore:
+            clear visual systems, interactive tools, and robotics projects that
+            connect code to the physical world.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img
+            src="assets/portfolio-hero.png"
+            alt="A clean desk with a laptop showing abstract visualizations and a small robotics component."
+          >
+        </figure>
+      </section>
+
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A concise intro you can personalize later.</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            I am a recent computer science graduate interested in making software
+            that is visual, interactive, and grounded in real-world problem
+            solving. My work sits at the intersection of full-stack engineering,
+            creative coding, data storytelling, and robotics.
+          </p>
+          <p>
+            This first version is intentionally simple: it gives us a clean
+            structure to build on, then we can swap in your real bio, project
+            details, resume link, photos, and deployment domain.
+          </p>
+          <ul class="skill-list" aria-label="Focus areas">
+            <li>Data visualization</li>
+            <li>Interactive media</li>
+            <li>Robotics systems</li>
+            <li>Frontend development</li>
+            <li>Python and JavaScript</li>
+            <li>Human-centered tools</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Selected work by category.</h2>
+        </div>
+
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Project categories">
+            <button class="tab is-active" id="tab-data" role="tab" aria-selected="true" aria-controls="panel-data" type="button">
+              Data Visualization
+            </button>
+            <button class="tab" id="tab-media" role="tab" aria-selected="false" aria-controls="panel-media" type="button" tabindex="-1">
+              Interactive Media
+            </button>
+            <button class="tab" id="tab-robotics" role="tab" aria-selected="false" aria-controls="panel-robotics" type="button" tabindex="-1">
+              Robotics
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="project-panel is-active" id="panel-data" role="tabpanel" aria-labelledby="tab-data">
+              <article class="project-card">
+                <p class="project-kicker">Visualization</p>
+                <h3>Exploratory Data Dashboard</h3>
+                <p>
+                  A placeholder for a dashboard or analysis project. Add the
+                  dataset, tools, key insight, and a live demo or GitHub link.
+                </p>
+              </article>
+              <article class="project-card">
+                <p class="project-kicker">Storytelling</p>
+                <h3>Interactive Chart Essay</h3>
+                <p>
+                  A space for a data story with charts, annotations, and user
+                  controls that make an insight easier to understand.
+                </p>
+              </article>
+            </div>
+
+            <div class="project-panel" id="panel-media" role="tabpanel" aria-labelledby="tab-media" hidden>
+              <article class="project-card">
+                <p class="project-kicker">Creative Coding</p>
+                <h3>Browser-Based Interactive Piece</h3>
+                <p>
+                  A placeholder for a p5.js, WebGL, audio-reactive, or game-like
+                  project where the user can manipulate the system directly.
+                </p>
+              </article>
+              <article class="project-card">
+                <p class="project-kicker">UX Prototype</p>
+                <h3>Experimental Interface</h3>
+                <p>
+                  A project slot for an interface prototype, installation
+                  concept, or interaction study.
+                </p>
+              </article>
+            </div>
+
+            <div class="project-panel" id="panel-robotics" role="tabpanel" aria-labelledby="tab-robotics" hidden>
+              <article class="project-card">
+                <p class="project-kicker">Hardware + Software</p>
+                <h3>Autonomous Robotics Build</h3>
+                <p>
+                  Add a robotics project here with sensors, control logic,
+                  simulation notes, and a short demo video or build log.
+                </p>
+              </article>
+              <article class="project-card">
+                <p class="project-kicker">Systems</p>
+                <h3>Motion or Perception Experiment</h3>
+                <p>
+                  A place to show computer vision, planning, controls, embedded
+                  work, or robot-human interaction research.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s connect.</h2>
+        </div>
+        <p>
+          Replace these with your real links when you are ready:
+          <a href="mailto:hello@example.com">Email</a>,
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>,
+          and <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed and built as a living portfolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

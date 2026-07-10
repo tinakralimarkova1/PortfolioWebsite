@@ -458,6 +458,14 @@ h3 {
   gap: 16px;
 }
 
+.project-panel[hidden] {
+  display: none;
+}
+
+.project-panel.all-projects {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .project-link {
   position: relative;
   display: flex;
@@ -472,6 +480,11 @@ h3 {
   box-shadow: var(--shadow);
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.project-link.featured {
+  grid-column: span 2;
+  min-height: 320px;
 }
 
 .project-link::after {
@@ -528,6 +541,42 @@ h3 {
   padding-top: 52px;
   font-size: clamp(1.6rem, 3vw, 2.65rem);
   font-weight: 900;
+  text-transform: uppercase;
+}
+
+.project-title-row {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 54px;
+}
+
+.project-title-row h3 {
+  margin: 0;
+  padding-top: 0;
+}
+
+.project-panel.all-projects .project-link:not(.featured) h3 {
+  font-size: clamp(1.35rem, 2vw, 2.05rem);
+  line-height: 1;
+}
+
+.project-date,
+.project-subtitle {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.project-date {
+  color: var(--hot);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.project-subtitle {
+  margin: 12px 0 0;
+  color: var(--ink);
+  font-size: 0.9rem;
   text-transform: uppercase;
 }
 
@@ -645,8 +694,13 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .project-panel {
+  .project-panel,
+  .project-panel.all-projects {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-link.featured {
+    grid-column: span 2;
   }
 }
 
@@ -696,6 +750,7 @@ h3 {
 
   .skills-grid,
   .project-panel,
+  .project-panel.all-projects,
   .project-preview {
     grid-template-columns: 1fr;
   }
@@ -706,6 +761,10 @@ h3 {
 
   .project-link {
     min-height: 250px;
+  }
+
+  .project-link.featured {
+    grid-column: span 1;
   }
 
   .site-footer {

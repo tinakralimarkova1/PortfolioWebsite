@@ -46,6 +46,7 @@ if (tabRoot) {
 
   projectLinks.forEach((link) => {
     link.addEventListener("click", () => {
+      if (!link.dataset.project || !link.dataset.details) return;
       if (!preview) return;
 
       const title = link.dataset.project;

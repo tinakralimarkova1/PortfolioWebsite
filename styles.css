@@ -500,6 +500,10 @@ h3 {
   transition: opacity 180ms ease, transform 180ms ease;
 }
 
+.project-link.detail-link::after {
+  content: "open ->";
+}
+
 .project-link:hover,
 .project-link:focus-visible {
   transform: translate(-4px, -4px);
@@ -679,6 +683,176 @@ h3 {
   text-decoration: none;
 }
 
+.project-detail-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(42px, 7vw, 88px) clamp(18px, 5vw, 64px) clamp(64px, 8vw, 104px);
+}
+
+.project-detail-hero {
+  padding: clamp(24px, 5vw, 64px) 0 clamp(44px, 7vw, 88px);
+}
+
+.back-link {
+  display: inline-flex;
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 28px;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 13px;
+  background: var(--surface);
+  box-shadow: 4px 4px 0 var(--mint);
+  font-family: "Space Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-detail-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: end;
+}
+
+.project-detail-heading h1 {
+  font-size: clamp(4.2rem, 10vw, 8rem);
+  overflow-wrap: normal;
+  word-break: normal;
+  text-transform: uppercase;
+}
+
+.project-detail-subtitle {
+  margin: 18px 0 0;
+  color: var(--hot);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-facts {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.project-facts div {
+  display: grid;
+  gap: 4px;
+}
+
+.project-facts dt {
+  color: var(--hot);
+  font-family: "Space Mono", monospace;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-facts dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.project-detail-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(280px, 1fr);
+  gap: clamp(24px, 5vw, 60px);
+  align-items: start;
+  padding: clamp(44px, 7vw, 82px) 0;
+  border-top: 2px solid var(--line);
+}
+
+.project-detail-section h2 {
+  font-size: clamp(2.1rem, 4vw, 3.8rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.project-overview h2 {
+  max-width: 620px;
+}
+
+.project-overview > p,
+.detail-card p,
+.detail-card li {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.demo-placeholder {
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  gap: 10px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 90, 60, 0.18), transparent 35%),
+    linear-gradient(90deg, rgba(20, 20, 20, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(20, 20, 20, 0.08) 1px, transparent 1px),
+    var(--surface);
+  background-size: auto, 28px 28px, 28px 28px, auto;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.demo-placeholder span {
+  color: var(--ink);
+  font-family: "Space Mono", monospace;
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.demo-placeholder p {
+  max-width: 340px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.detail-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-card {
+  min-height: 100%;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.detail-card:nth-child(2) {
+  background: #effcf5;
+}
+
+.detail-card:nth-child(3) {
+  background: #eef4ff;
+}
+
+.detail-card h2 {
+  font-size: clamp(1.6rem, 2vw, 2.05rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.detail-card ul {
+  display: grid;
+  gap: 12px;
+  padding-left: 1.1rem;
+  margin: 22px 0 0;
+}
+
 @media (max-width: 980px) {
   .hero-grid,
   .about-layout,
@@ -701,6 +875,12 @@ h3 {
 
   .project-link.featured {
     grid-column: span 2;
+  }
+
+  .project-detail-heading,
+  .project-detail-section,
+  .detail-card-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -127,16 +127,19 @@
       <section id="projects" class="section projects-section" aria-labelledby="projects-title">
         <div class="section-marker">03 / projects</div>
         <div class="section-topline">
-          <h2 id="projects-title">Clickable project shelves</h2>
+          <h2 id="projects-title">Projects</h2>
           <p>
-            These are placeholders for now, but the structure is ready for real
-            links, GitHub repos, demos, videos, and project writeups.
+            A growing collection of apps, prototypes, visual systems, and robotics
+            builds. Use the tabs to filter by category.
           </p>
         </div>
 
         <div class="tabs" data-tabs>
           <div class="tab-list" role="tablist" aria-label="Project categories">
-            <button class="tab is-active" id="tab-data" role="tab" aria-selected="true" aria-controls="panel-data" type="button">
+            <button class="tab is-active" id="tab-all" role="tab" aria-selected="true" aria-controls="panel-all" type="button">
+              All Projects
+            </button>
+            <button class="tab" id="tab-data" role="tab" aria-selected="false" aria-controls="panel-data" type="button" tabindex="-1">
               Data Visualization
             </button>
             <button class="tab" id="tab-media" role="tab" aria-selected="false" aria-controls="panel-media" type="button" tabindex="-1">
@@ -148,7 +151,48 @@
           </div>
 
           <div class="tab-panels">
-            <div class="project-panel is-active" id="panel-data" role="tabpanel" aria-labelledby="tab-data">
+            <div class="project-panel all-projects is-active" id="panel-all" role="tabpanel" aria-labelledby="tab-all">
+              <a
+                class="project-link featured hot"
+                href="#project-preview"
+                data-project="GuideMe"
+                data-details="GuideMe is an Android application designed to help older adults and first-time smartphone users learn essential mobile skills through guided, interactive simulations. Rather than relying on passive tutorials or videos, GuideMe provides hands-on practice inside simulated Phone, Camera, and Wi-Fi interfaces, supported by step-by-step lessons, real-time feedback, and voice guidance."
+                aria-label="Preview GuideMe capstone project"
+              >
+                <span class="project-type">Android app</span>
+                <div class="project-title-row">
+                  <h3>GuideMe</h3>
+                  <span class="project-date">Sep 2025 - Dec 2025</span>
+                </div>
+                <p class="project-subtitle">Capstone Project</p>
+                <p>
+                  An Android application designed to help older adults and
+                  first-time smartphone users learn essential mobile skills
+                  through guided, interactive simulations.
+                </p>
+                <span class="project-meta">Kotlin / Jetpack Compose / MVVM</span>
+              </a>
+              <a class="project-link mint" href="#project-preview" data-project="Interactive Chart Essay" data-details="Add a public demo, chart screenshots, and the story arc this project explains." aria-label="Preview Interactive Chart Essay project">
+                <span class="project-type">story</span>
+                <h3>Interactive Chart Essay</h3>
+                <p>A scrollable explanation with annotations, user controls, and calm visuals.</p>
+                <span class="project-meta">HTML / CSS / data</span>
+              </a>
+              <a class="project-link sky" href="#project-preview" data-project="Browser-Based Interactive Piece" data-details="Add the live interactive demo, a short screen recording, and what user input changes." aria-label="Preview Browser-Based Interactive Piece project">
+                <span class="project-type">creative code</span>
+                <h3>Browser-Based Interactive Piece</h3>
+                <p>A playful web experiment with input, motion, and generative behavior.</p>
+                <span class="project-meta">Canvas / JS</span>
+              </a>
+              <a class="project-link mint" href="#project-preview" data-project="Autonomous Robotics Build" data-details="Add a demo video, hardware stack, control approach, and the most interesting failure." aria-label="Preview Autonomous Robotics Build project">
+                <span class="project-type">hardware</span>
+                <h3>Autonomous Robotics Build</h3>
+                <p>Sensors, control logic, testing notes, and a demo video slot.</p>
+                <span class="project-meta">robotics / C++</span>
+              </a>
+            </div>
+
+            <div class="project-panel" id="panel-data" role="tabpanel" aria-labelledby="tab-data" hidden>
               <a class="project-link hot" href="#project-preview" data-project="Exploratory Data Dashboard" data-details="Add the dataset, live dashboard, GitHub repo, and one sentence about the main insight." aria-label="Preview Exploratory Data Dashboard project">
                 <span class="project-type">dashboard</span>
                 <h3>Exploratory Data Dashboard</h3>
@@ -214,8 +258,8 @@
 
           <aside id="project-preview" class="project-preview" aria-live="polite">
             <span class="project-preview-label">selected project</span>
-            <h3>Exploratory Data Dashboard</h3>
-            <p>Add the dataset, live dashboard, GitHub repo, and one sentence about the main insight.</p>
+            <h3>GuideMe</h3>
+            <p>GuideMe is an Android application designed to help older adults and first-time smartphone users learn essential mobile skills through guided, interactive simulations. Rather than relying on passive tutorials or videos, GuideMe provides hands-on practice inside simulated Phone, Camera, and Wi-Fi interfaces, supported by step-by-step lessons, real-time feedback, and voice guidance.</p>
           </aside>
         </div>
       </section>

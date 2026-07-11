@@ -825,6 +825,29 @@ h3 {
   color: var(--muted);
 }
 
+.demo-video-frame {
+  width: min(100%, 420px);
+  margin: 0;
+  justify-self: start;
+}
+
+.demo-video-frame video {
+  display: block;
+  width: 100%;
+  max-height: 680px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.demo-video-frame figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-family: "Space Mono", monospace;
+  font-size: 0.82rem;
+}
+
 .project-detail-copy ul {
   display: grid;
   gap: 12px;

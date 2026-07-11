@@ -748,11 +748,17 @@ h3 {
 }
 
 .project-facts dt {
-  color: var(--hot);
+  color: var(--muted);
   font-family: "Space Mono", monospace;
   font-size: 0.74rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.project-detail-page .mono-label,
+.project-detail-page .section-marker,
+.project-detail-subtitle {
+  display: none;
 }
 
 .project-facts dd {

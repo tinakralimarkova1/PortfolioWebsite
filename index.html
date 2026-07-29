@@ -62,70 +62,43 @@
         </div>
       </section>
 
-      <section id="about" class="section about-section" aria-labelledby="about-title">
-        <div class="section-marker">01 / about</div>
-        <div class="about-layout">
-          <div>
+      <section id="about" class="section about-section intro-hero" aria-labelledby="about-title">
+        <div class="section-marker">01 / about + skills</div>
+        <div class="intro-split">
+          <div class="intro-column">
             <h2 id="about-title">Who am I?</h2>
             <p>
               I'm someone who enjoys learning, solving problems, and finding better ways to do things. I love building experiences that people can interact with, whether that's developing games for others to enjoy or creating robotics projects with practical, innovative applications. At the same time, I enjoy the engineering that makes those experiences possible. I like working on backend systems, designing clean architectures, managing data, and building reliable software that supports user-facing applications. I like exploring new technologies and finding creative ways to use them to build meaningful projects.
             </p>
+            <div class="interests-block">
+              <h3>Interests</h3>
+              <ul class="pill-list" aria-label="Interests">
+                <li>Robotics</li>
+                <li>UX/UI Design</li>
+                <li>Game Development</li>
+                <li>Web Development</li>
+                <li>Data Visualization</li>
+              </ul>
+            </div>
           </div>
-          <div class="interests-block">
-            <h3>Interests</h3>
-            <ul class="pill-list" aria-label="Interests">
-              <li>Robotics</li>
-              <li>UX/UI Design</li>
-              <li>Game Development</li>
-              <li>Web Development</li>
-              <li>Data Visualization</li>
+          <div id="skills" class="intro-column skills-summary" aria-labelledby="skills-title">
+            <h2 id="skills-title">What am I good at?</h2>
+            <p>
+              These are the skills I have the most experience with through my coursework, personal projects, and professional work. While they're my strongest areas, I'm always looking for opportunities to learn new technologies and continue expanding my skill set.
+            </p>
+            <ul class="skills-list">
+              <li><strong>Web Development:</strong> React, Next.js, Flask, HTML, CSS, JavaScript, TypeScript, Vercel, REST APIs</li>
+              <li><strong>Android Development:</strong> Kotlin, Jetpack Compose, MVVM, Android Studio, Material Design, responsive UI</li>
+              <li><strong>Data Visualization:</strong> Python, Pandas, Plotly.js, NumPy, SQL, dashboards, interactive visualizations</li>
+              <li><strong>Game Development:</strong> Unity, C#, object-oriented programming, gameplay systems, UI, scene management</li>
+              <li><strong>Robotics:</strong> Arduino, C/C++, embedded systems, sensors, motor control, hydraulic robotics</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
-        <div class="section-marker">02 / skills</div>
-        <div class="section-topline">
-          <h2 id="skills-title">What am I good at?</h2>
-          <p>These are the skills I have the most experience with through my coursework, personal projects, and professional work. While they're my strongest areas, I'm always looking for opportunities to learn new technologies and continue expanding my skill set.
-          </p>
-        </div>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <span class="skill-number">01</span>
-            <h3>Web Development</h3>
-            <p>React, Next.js, Flask, HTML, CSS, JavaScript, TypeScript, Vercel, REST APIs</p>
-          </article>
-        
-          <article class="skill-card">
-            <span class="skill-number">02</span>
-            <h3>Android Development</h3>
-            <p>Kotlin, Jetpack Compose, MVVM, Android Studio, Material Design, responsive UI</p>
-          </article>
-        
-          <article class="skill-card">
-            <span class="skill-number">03</span>
-            <h3>Data Visualization</h3>
-            <p>Python, Pandas, Plotly.js, NumPy, SQL, dashboards, interactive visualizations</p>
-          </article>
-        
-          <article class="skill-card">
-            <span class="skill-number">04</span>
-            <h3>Game Development</h3>
-            <p>Unity, C#, object-oriented programming, gameplay systems, UI, scene management</p>
-          </article>
-        
-          <article class="skill-card">
-            <span class="skill-number">05</span>
-            <h3>Robotics</h3>
-            <p>Arduino, C/C++, embedded systems, sensors, motor control, hydraulic robotics</p>
-          </article>
-        </div>
-      </section>
-
       <section id="projects" class="section projects-section" aria-labelledby="projects-title">
-        <div class="section-marker">03 / projects</div>
+        <div class="section-marker">02 / projects</div>
         <div class="section-topline">
           <h2 id="projects-title">Projects</h2>
           <p>
@@ -251,7 +224,7 @@
       </section>
 
       <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-        <div class="section-marker">04 / contact</div>
+        <div class="section-marker">03 / contact</div>
         <div class="contact-card">
           <p class="mono-label">available for projects, internships, and good questions</p>
           <h2 id="contact-title">Want to build something strange and useful?</h2>

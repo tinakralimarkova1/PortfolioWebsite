@@ -107,8 +107,7 @@ a {
 .mono-label,
 .section-marker,
 .project-type,
-.project-meta,
-.skill-number {
+.project-meta {
   font-family: "Space Mono", monospace;
 }
 
@@ -300,32 +299,34 @@ h3 {
   text-transform: uppercase;
 }
 
-.about-layout,
+.intro-split,
 .section-topline {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(260px, 0.48fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 5vw, 58px);
   align-items: start;
 }
 
-.about-layout p,
+.intro-column p,
 .section-topline p {
-  max-width: 760px;
+  max-width: 100%;
   margin: 0;
   color: var(--muted);
   font-size: 1.08rem;
 }
 
-.about-layout h2 {
+.intro-column h2 {
   margin-bottom: 18px;
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  line-height: 1;
+}
+
+.skills-summary {
+  scroll-margin-top: 96px;
 }
 
 .interests-block {
-  border: 2px solid var(--line);
-  border-radius: 8px;
-  padding: 20px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  margin-top: 24px;
 }
 
 .interests-block h3 {
@@ -351,55 +352,20 @@ h3 {
   font-weight: 700;
 }
 
-.skills-grid {
+.skills-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 28px;
-}
-
-.skill-card {
-  display: flex;
-  min-height: 255px;
-  flex-direction: column;
-  border: 2px solid var(--line);
-  border-radius: 8px;
-  padding: 18px;
-  background: var(--surface);
-  box-shadow: 5px 5px 0 var(--line);
-}
-
-.skill-card:nth-child(2) {
-  background: #f4fff9;
-}
-
-.skill-card:nth-child(3) {
-  background: #f2f6ff;
-}
-
-.skill-card:nth-child(4) {
-  background: #fff3ee;
-}
-
-.skill-card:nth-child(5) {
-  background: #fffbe8;
-}
-
-.skill-number {
-  display: inline-block;
-  margin-bottom: auto;
-  color: var(--hot);
-  font-size: 0.84rem;
-  font-weight: 700;
-}
-
-.skill-card h3 {
-  margin-top: 34px;
-}
-
-.skill-card p {
-  margin: 12px 0 0;
+  gap: 12px;
+  padding-left: 1.1rem;
+  margin: 22px 0 0;
   color: var(--muted);
+}
+
+.skills-list li::marker {
+  color: var(--hot);
+}
+
+.skills-list strong {
+  color: var(--ink);
 }
 
 .projects-section {
@@ -858,17 +824,13 @@ h3 {
 
 @media (max-width: 980px) {
   .hero-grid,
-  .about-layout,
+  .intro-split,
   .section-topline {
     grid-template-columns: 1fr;
   }
 
   .signal-panel {
     width: min(100%, 440px);
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-panel,
@@ -926,7 +888,6 @@ h3 {
     width: calc(100% - 7px);
   }
 
-  .skills-grid,
   .project-panel,
   .project-panel.all-projects,
   .project-preview {

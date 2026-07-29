@@ -291,6 +291,12 @@ h3 {
   padding: clamp(58px, 8vw, 104px) clamp(18px, 5vw, 64px);
 }
 
+.intro-hero {
+  max-width: 1320px;
+  padding-right: clamp(18px, 3vw, 36px);
+  padding-left: clamp(18px, 3vw, 36px);
+}
+
 .section-marker {
   margin-bottom: 20px;
   color: var(--hot);

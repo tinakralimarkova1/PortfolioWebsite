@@ -291,10 +291,44 @@ h3 {
   padding: clamp(58px, 8vw, 104px) clamp(18px, 5vw, 64px);
 }
 
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 0 clamp(14px, 1.5vw, 22px);
+}
+
+.section-break::before,
+.section-break::after {
+  content: "";
+  display: block;
+  flex: 1;
+  height: 2px;
+  background: var(--line);
+}
+
+.section-break span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: var(--sun);
+}
+
+.section-break span:nth-child(2) {
+  background: var(--hot);
+}
+
+.section-break span:nth-child(3) {
+  background: var(--mint);
+}
+
 .intro-hero {
-  max-width: 1400px;
-  padding-right: clamp(14px, 1.6vw, 22px);
-  padding-left: clamp(14px, 1.6vw, 22px);
+  max-width: none;
+  padding-right: clamp(10px, 1vw, 16px);
+  padding-left: clamp(10px, 1vw, 16px);
 }
 
 .section-marker {
@@ -311,6 +345,10 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 5vw, 58px);
   align-items: start;
+}
+
+.intro-split {
+  gap: clamp(54px, 8vw, 132px);
 }
 
 .intro-column p,
@@ -835,6 +873,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .intro-split {
+    gap: 44px;
+  }
+
   .signal-panel {
     width: min(100%, 440px);
   }
@@ -902,6 +944,10 @@ h3 {
 
   .signal-panel {
     width: calc(100vw - 55px);
+  }
+
+  .intro-split {
+    gap: 36px;
   }
 
   .project-link {

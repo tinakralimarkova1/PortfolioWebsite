@@ -12,6 +12,7 @@
   --sun: #f3c623;
   --shadow: 0 12px 30px rgba(20, 20, 20, 0.1);
   --soft-shadow: 0 18px 48px rgba(20, 20, 20, 0.1);
+  --wide-section-x: clamp(44px, 6vw, 88px);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -293,8 +294,8 @@ h3 {
 
 .intro-hero {
   max-width: none;
-  padding-right: clamp(44px, 6vw, 88px);
-  padding-left: clamp(44px, 6vw, 88px);
+  padding-right: var(--wide-section-x);
+  padding-left: var(--wide-section-x);
 }
 
 .section-marker {
@@ -380,15 +381,21 @@ h3 {
 
 .projects-section {
   max-width: none;
+  padding-right: var(--wide-section-x);
+  padding-left: var(--wide-section-x);
   border-top: 1px solid rgba(20, 20, 20, 0.16);
   border-bottom: 1px solid rgba(20, 20, 20, 0.16);
   background: rgba(239, 230, 209, 0.45);
 }
 
 .projects-section > * {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: none;
+}
+
+.contact-section {
+  max-width: none;
+  padding-right: var(--wide-section-x);
+  padding-left: var(--wide-section-x);
 }
 
 .tabs {

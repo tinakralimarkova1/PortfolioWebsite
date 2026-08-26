@@ -775,8 +775,7 @@ h3 {
 
 .experience-item {
   display: grid;
-  gap: 14px;
-  max-width: 760px;
+  gap: 18px;
   padding-top: 20px;
   border-top: 1px solid rgba(20, 20, 20, 0.18);
 }
@@ -794,6 +793,7 @@ h3 {
 
 .experience-item ul {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   padding-left: 1.1rem;
   margin: 0;
@@ -802,7 +802,7 @@ h3 {
 }
 
 .about-section .section-topline p {
-  max-width: 760px;
+  max-width: 1080px;
   margin-top: 20px;
 }
 
@@ -810,7 +810,6 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  max-width: 760px;
   margin-top: 20px;
 }
 
@@ -1428,6 +1427,10 @@ h3 {
     font-size: 0.92rem;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  .experience-item ul {
+    grid-template-columns: 1fr;
   }
 
   .project-visual {

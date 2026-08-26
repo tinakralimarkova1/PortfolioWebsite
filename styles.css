@@ -425,17 +425,28 @@ h3 {
 
 .featured-work {
   display: grid;
-  gap: 28px;
+  gap: 24px;
 }
 
 .featured-projects {
   display: grid;
-  gap: 18px;
+  gap: 14px;
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.featured-work .section-topline {
+  display: block;
+  text-align: center;
+}
+
+.featured-work .section-topline h2 {
+  font-size: clamp(2rem, 3.8vw, 3.45rem);
 }
 
 .featured-project {
   display: grid;
-  grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1fr);
+  grid-template-columns: minmax(210px, 0.36fr) minmax(0, 1fr);
   overflow: hidden;
   border: 1px solid rgba(20, 20, 20, 0.16);
   border-radius: 8px;
@@ -444,12 +455,12 @@ h3 {
 }
 
 .featured-project.flagship {
-  grid-template-columns: minmax(280px, 0.46fr) minmax(0, 1fr);
+  grid-template-columns: minmax(210px, 0.36fr) minmax(0, 1fr);
 }
 
 .project-visual {
   position: relative;
-  min-height: 255px;
+  min-height: 220px;
   border-right: 1px solid rgba(20, 20, 20, 0.14);
   background: var(--paper-deep);
 }
@@ -472,7 +483,7 @@ h3 {
 .phone-preview,
 .robot-preview {
   position: absolute;
-  inset: 62px 26px 26px;
+  inset: 54px 22px 22px;
 }
 
 .satellite-visual {
@@ -632,8 +643,13 @@ h3 {
 .featured-copy {
   display: grid;
   align-content: start;
-  gap: 12px;
-  padding: clamp(20px, 3vw, 34px);
+  gap: 10px;
+  padding: clamp(18px, 2.4vw, 28px);
+}
+
+.featured-copy > * {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .project-kicker {
@@ -644,7 +660,7 @@ h3 {
 }
 
 .featured-copy h3 {
-  font-size: clamp(1.8rem, 3.2vw, 3.25rem);
+  font-size: clamp(1.65rem, 2.7vw, 2.65rem);
   font-weight: 850;
   line-height: 1;
 }
@@ -653,15 +669,20 @@ h3 {
   max-width: 760px;
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.96rem;
 }
 
 .engineering-list {
   display: grid;
-  gap: 8px;
+  gap: 6px;
   padding-left: 1.1rem;
   margin: 2px 0;
   color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.engineering-list li {
+  overflow-wrap: anywhere;
 }
 
 .engineering-list li::marker {
@@ -954,6 +975,7 @@ h3 {
   font-size: 0.8rem;
   font-weight: 650;
   margin-top: auto;
+  overflow-wrap: anywhere;
 }
 
 .project-preview {
@@ -1370,6 +1392,18 @@ h3 {
 
   .featured-copy h3 {
     font-size: clamp(1.75rem, 8.5vw, 2.55rem);
+  }
+
+  .featured-copy {
+    padding: 18px 16px;
+  }
+
+  .featured-copy p,
+  .engineering-list,
+  .project-meta {
+    font-size: 0.92rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .project-visual {

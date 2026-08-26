@@ -412,8 +412,8 @@ h3 {
 
 .projects-section {
   max-width: none;
-  padding-right: var(--wide-section-x);
-  padding-left: var(--wide-section-x);
+  padding-right: clamp(24px, 4vw, 56px);
+  padding-left: clamp(24px, 4vw, 56px);
   border-top: 1px solid rgba(20, 20, 20, 0.16);
   border-bottom: 1px solid rgba(20, 20, 20, 0.16);
   background: rgba(239, 230, 209, 0.45);
@@ -431,7 +431,7 @@ h3 {
 .featured-projects {
   display: grid;
   gap: 14px;
-  width: min(100%, 1120px);
+  width: min(100%, 1344px);
   margin: 0 auto;
 }
 

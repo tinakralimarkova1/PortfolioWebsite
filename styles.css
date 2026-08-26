@@ -722,11 +722,25 @@ h3 {
   gap: 6px;
   border-radius: 8px;
   padding: 16px;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.additional-project-grid a:hover,
+.additional-project-grid a:focus-visible {
+  border-color: var(--hot);
+  background: rgba(255, 90, 60, 0.1);
+  color: var(--ink);
+  transform: translateY(-2px);
 }
 
 .additional-project-grid span {
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.additional-project-grid a:hover span,
+.additional-project-grid a:focus-visible span {
+  color: var(--hot);
 }
 
 .contact-section {

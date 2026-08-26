@@ -762,19 +762,21 @@ h3 {
 }
 
 .experience-section .section-topline,
+.about-section .section-topline,
 .skills-section .section-topline {
   display: block;
 }
 
 .experience-section h2,
+.about-section h2,
 .skills-section h2 {
   font-size: clamp(1.75rem, 3vw, 2.55rem);
 }
 
 .experience-item {
   display: grid;
-  grid-template-columns: minmax(220px, 0.38fr) minmax(0, 1fr);
-  gap: clamp(20px, 4vw, 52px);
+  gap: 14px;
+  max-width: 760px;
   padding-top: 20px;
   border-top: 1px solid rgba(20, 20, 20, 0.18);
 }
@@ -797,6 +799,11 @@ h3 {
   margin: 0;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.about-section .section-topline p {
+  max-width: 760px;
+  margin-top: 20px;
 }
 
 .skill-groups {

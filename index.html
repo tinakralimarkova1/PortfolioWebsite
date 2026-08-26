@@ -25,9 +25,10 @@
         <span class="brand-text">portfolio</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -36,16 +37,19 @@
       <section id="top" class="hero" aria-labelledby="hero-title">
         <div class="hero-grid">
           <div class="hero-copy">
-            <h1 id="hero-title">Hi! I'm Tina</h1>
+            <p class="role-label">Software Engineer</p>
+            <h1 id="hero-title">Tina Kralimarkova</h1>
             <p class="hero-intro">
-              I build software across data visualization, interactive media,
-              and robotics, with a focus on clear interfaces and thoughtful
-              technical systems.
+              I build data-driven web applications, interactive systems, and
+              tools that turn complex information into usable experiences.
             </p>
             <div class="hero-actions" aria-label="Portfolio actions">
-              <a class="button primary" href="#projects">See the work</a>
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
               <a class="button secondary" href="#contact">Contact</a>
             </div>
+            <p class="tech-strip">Python · TypeScript · React · Next.js · SQL · Kotlin · C/C++</p>
           </div>
 
           <aside class="signal-panel" aria-label="Portfolio signal panel">
@@ -63,167 +67,211 @@
         <span></span>
       </div>
 
-      <section id="about" class="section about-section intro-hero" aria-labelledby="about-title">
-        <div class="intro-split">
-          <div class="intro-column">
-            <h2 id="about-title">About Me</h2>
-            <p>
-              I'm someone who enjoys learning, solving problems, and finding better ways to do things. I love building experiences that people can interact with, whether that's developing games for others to enjoy or creating robotics projects with practical, innovative applications. At the same time, I enjoy the engineering that makes those experiences possible. I like working on backend systems, designing clean architectures, managing data, and building reliable software that supports user-facing applications. I like exploring new technologies and finding creative ways to use them to build meaningful projects.
-            </p>
-            <div class="interests-block">
-              <h3>Interests</h3>
-              <ul class="pill-list" aria-label="Interests">
-                <li>Robotics</li>
-                <li>UX/UI Design</li>
-                <li>Game Development</li>
-                <li>Web Development</li>
-                <li>Data Visualization</li>
-              </ul>
-            </div>
-          </div>
-          <div id="skills" class="intro-column skills-summary" aria-labelledby="skills-title">
-            <h2 id="skills-title">Skills</h2>
-            <p>
-              These are the skills I have the most experience with through my coursework, personal projects, and professional work. While they're my strongest areas, I'm always looking for opportunities to learn new technologies and continue expanding my skill set.
-            </p>
-            <ul class="skills-list">
-              <li><strong>Web Development:</strong> React, Next.js, Flask, HTML, CSS, JavaScript, TypeScript, Vercel, REST APIs</li>
-              <li><strong>Android Development:</strong> Kotlin, Jetpack Compose, MVVM, Android Studio, Material Design, responsive UI</li>
-              <li><strong>Data Visualization:</strong> Python, Pandas, Plotly.js, NumPy, SQL, dashboards, interactive visualizations</li>
-              <li><strong>Game Development:</strong> Unity, C#, object-oriented programming, gameplay systems, UI, scene management</li>
-              <li><strong>Robotics:</strong> Arduino, C/C++, embedded systems, sensors, motor control, hydraulic robotics</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <section id="projects" class="section projects-section featured-work" aria-labelledby="projects-title">
         <div class="section-topline">
-          <h2 id="projects-title">Projects</h2>
+          <h2 id="projects-title">Featured Work</h2>
           <p>
-            Selected applications, visual systems, and robotics projects.
+            Data · Web · Mobile · Robotics
           </p>
         </div>
 
-        <div class="tabs" data-tabs>
-          <div class="tab-list" role="tablist" aria-label="Project categories">
-            <button class="tab is-active" id="tab-all" role="tab" aria-selected="true" aria-controls="panel-all" type="button">
-              All Projects
-            </button>
-            <button class="tab" id="tab-data" role="tab" aria-selected="false" aria-controls="panel-data" type="button" tabindex="-1">
-              Data Visualization
-            </button>
-            <button class="tab" id="tab-media" role="tab" aria-selected="false" aria-controls="panel-media" type="button" tabindex="-1">
-              Interactive Media
-            </button>
-            <button class="tab" id="tab-robotics" role="tab" aria-selected="false" aria-controls="panel-robotics" type="button" tabindex="-1">
-              Robotics
-            </button>
-          </div>
-
-          <div class="tab-panels">
-            <div class="project-panel all-projects is-active" id="panel-all" role="tabpanel" aria-labelledby="tab-all">
-              <a
-                class="project-link featured hot detail-link"
-                href="projects/guideme.html"
-                aria-label="Open GuideMe capstone project page"
-              >
-                <div class="project-title-row">
-                  <h3>GuideMe</h3>
-                  <span class="project-date">Sep 2025 - Present</span>
-                </div>
-                <p>
-                  An Android application designed to help older adults and
-                  first-time smartphone users learn essential mobile skills
-                  through guided, interactive simulations.
-                </p>
-                <span class="project-meta">Kotlin / Jetpack Compose / Room</span>
-              </a>
-              <a class="project-link mint detail-link" href="projects/airline-reservation-system.html" aria-label="Open Airline Reservation System project page">
-                <h3>Airline Reservation System</h3>
-                <p>Full-stack booking platform with customer, staff, and admin workflows backed by a relational database.</p>
-                <span class="project-meta">Flask / MySQL / JavaScript</span>
-              </a>
-              <a class="project-link sky detail-link" href="projects/us-college-explorer.html" aria-label="Open US College Explorer project page">
-                <h3>US College Explorer</h3>
-                <p>Interactive dashboard for comparing colleges by admissions, cost, enrollment, and geography.</p>
-                <span class="project-meta">Next.js / Python / GeoJSON</span>
-              </a>
-              <a class="project-link sky detail-link" href="projects/nyu-space-talks.html" aria-label="Open NYU Space Talks Website Migration project page">
-                <h3>NYU Space Talks Website Migration</h3>
-                <p>Migration of the NYU Space Talks site from Wix to a custom web application with a modern event archive.</p>
-                <span class="project-meta">Next.js / React / TypeScript / Tailwind CSS</span>
-              </a>
-              <a class="project-link mint detail-link" href="projects/hydrachnid.html" aria-label="Open Hydrachnid robotics project page">
-                <h3>Hydrachnid</h3>
-                <p>Spider-inspired quadruped robot using hydraulic actuation, Arduino control, and centralized power distribution.</p>
-                <span class="project-meta">Arduino / C/C++ / hardware</span>
-              </a>
-              <a class="project-link hot detail-link" href="projects/satellite-visualizations.html" aria-label="Open Historical Satellite Visualizations project page">
-                <h3>Satellite Visualizations</h3>
-                <p>Interactive visual analytics for exploring 60,000+ historical satellite and payload records.</p>
-                <span class="project-meta">Python / Plotly.js / Vercel</span>
-              </a>
+        <div class="featured-projects">
+          <article class="featured-project flagship">
+            <div class="project-visual satellite-visual" aria-hidden="true">
+              <span class="visual-label">60,000+ records</span>
+              <div class="orbit-map">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-
-            <div class="project-panel" id="panel-data" role="tabpanel" aria-labelledby="tab-data" hidden>
-              <a class="project-link sky detail-link" href="projects/us-college-explorer.html" aria-label="Open US College Explorer project page">
-                <h3>US College Explorer</h3>
-                <p>Responsive college exploration dashboard with dynamic filters, charts, and geographic visualizations.</p>
-                <span class="project-meta">Next.js / Python / GeoJSON</span>
-              </a>
-              <a class="project-link mint detail-link" href="projects/airline-reservation-system.html" aria-label="Open Airline Reservation System project page">
-                <h3>Airline Reservation System</h3>
-                <p>Database-backed reservation app with analytics dashboards and reporting tools.</p>
-                <span class="project-meta">Flask / MySQL / JSON APIs</span>
-              </a>
-              <a class="project-link hot detail-link" href="projects/satellite-visualizations.html" aria-label="Open Historical Satellite Visualizations project page">
-                <h3>Satellite Visualizations</h3>
-                <p>Interactive visual analytics for exploring 60,000+ historical satellite and payload records.</p>
-                <span class="project-meta">Python / Plotly.js / Vercel</span>
-              </a>
+            <div class="featured-copy">
+              <p class="project-kicker">Research Data Visualization</p>
+              <h3>Satellite Data Explorer</h3>
+              <p>
+                Built data workflows and interactive visualizations for a
+                historical satellite database with more than 60,000 orbital and
+                payload records.
+              </p>
+              <ul class="engineering-list">
+                <li>Python data integration, validation, and standardization</li>
+                <li>Interactive Plotly visual analytics for research questions</li>
+                <li>Vercel-hosted web presentation for public access</li>
+              </ul>
+              <p class="project-meta">Python · Plotly.js · HTML/CSS · Vercel</p>
+              <div class="project-actions">
+                <a href="projects/satellite-visualizations.html">Case Study</a>
+              </div>
             </div>
+          </article>
 
-            <div class="project-panel" id="panel-media" role="tabpanel" aria-labelledby="tab-media" hidden>
-              <a class="project-link hot detail-link" href="projects/guideme.html" aria-label="Open GuideMe capstone project page">
-                <h3>GuideMe</h3>
-                <p>Guided smartphone simulations designed around older adults, large touch targets, and simplified interaction flows.</p>
-                <span class="project-meta">Kotlin / Compose / UX</span>
-              </a>
-              <a class="project-link sky detail-link" href="projects/us-college-explorer.html" aria-label="Open US College Explorer project page">
-                <h3>US College Explorer</h3>
-                <p>Interactive interface for exploring SAT scores, admission rates, campus size, and cost metrics.</p>
-                <span class="project-meta">Next.js / charts / maps</span>
-              </a>
-              <a class="project-link sky detail-link" href="projects/nyu-space-talks.html" aria-label="Open NYU Space Talks Website Migration project page">
-                <h3>NYU Space Talks Website Migration</h3>
-                <p>Custom Next.js rebuild for a public event site with cleaner archive structure and reusable components.</p>
-                <span class="project-meta">Next.js / React / Tailwind CSS</span>
-              </a>
-              <a class="project-link mint detail-link" href="projects/airline-reservation-system.html" aria-label="Open Airline Reservation System project page">
-                <h3>Airline Reservation System</h3>
-                <p>Role-based web application with booking flows, dashboards, authentication, and admin tools.</p>
-                <span class="project-meta">Flask / JavaScript / MySQL</span>
-              </a>
+          <article class="featured-project">
+            <div class="project-visual college-visual" aria-hidden="true">
+              <span class="visual-label">Live dashboard</span>
+              <div class="chart-preview">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+            <div class="featured-copy">
+              <p class="project-kicker">Full-Stack Data Visualization</p>
+              <h3>US College Explorer</h3>
+              <p>
+                Interactive dashboard for comparing colleges by admissions,
+                cost, enrollment, geography, and SAT score data.
+              </p>
+              <ul class="engineering-list">
+                <li>Processed education datasets with Python</li>
+                <li>Built dynamic filters, charts, and map-based views</li>
+                <li>Designed responsive comparison workflows</li>
+              </ul>
+              <p class="project-meta">Next.js · Python · GeoJSON</p>
+              <div class="project-actions">
+                <a href="https://careerexplorer-puce.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="projects/us-college-explorer.html">Case Study</a>
+              </div>
+            </div>
+          </article>
 
-            <div class="project-panel" id="panel-robotics" role="tabpanel" aria-labelledby="tab-robotics" hidden>
-              <a class="project-link mint detail-link" href="projects/hydrachnid.html" aria-label="Open Hydrachnid robotics project page">
-                <h3>Hydrachnid</h3>
-                <p>Hydraulic quadruped robot built with motors, valves, syringes, and elastic return mechanisms.</p>
-                <span class="project-meta">Arduino / C/C++ / hydraulics</span>
-              </a>
+          <article class="featured-project">
+            <div class="project-visual mobile-visual" aria-hidden="true">
+              <span class="visual-label">Android app</span>
+              <div class="phone-preview">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+            <div class="featured-copy">
+              <p class="project-kicker">Android Accessibility</p>
+              <h3>GuideMe</h3>
+              <p>
+                Android app that helps older adults learn smartphone skills
+                through realistic simulations, guided lessons, and voice
+                instructions.
+              </p>
+              <ul class="engineering-list">
+                <li>MVVM architecture with reusable lesson components</li>
+                <li>Room database layer for local progress tracking</li>
+                <li>Accessibility-focused UI and testing workflows</li>
+              </ul>
+              <p class="project-meta">Kotlin · Jetpack Compose · Room</p>
+              <div class="project-actions">
+                <a href="projects/guideme.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project">
+            <div class="project-visual robotics-visual" aria-hidden="true">
+              <span class="visual-label">Hardware + software</span>
+              <div class="robot-preview">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="featured-copy">
+              <p class="project-kicker">Robotics</p>
+              <h3>Hydrachnid</h3>
+              <p>
+                Spider-inspired quadruped robot using hydraulic actuation,
+                Arduino control, motors, valves, syringes, and centralized
+                power distribution.
+              </p>
+              <ul class="engineering-list">
+                <li>Embedded control with Arduino and C/C++</li>
+                <li>Hydraulic actuation and mechanical integration</li>
+                <li>Hardware/software testing across power and motion systems</li>
+              </ul>
+              <p class="project-meta">Arduino · C/C++ · Hydraulics</p>
+              <div class="project-actions">
+                <a href="projects/hydrachnid.html">Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="additional-projects" aria-labelledby="additional-projects-title">
+          <h3 id="additional-projects-title">Additional Projects</h3>
+          <div class="additional-project-grid">
+            <a href="projects/nyu-space-talks.html">
+              <strong>NYU Space Talks Website Migration</strong>
+              <span>Next.js · React · TypeScript · Tailwind CSS</span>
+            </a>
+            <a href="projects/airline-reservation-system.html">
+              <strong>Airline Reservation System</strong>
+              <span>Flask · MySQL · JavaScript</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+        <div class="section-topline">
+          <h2 id="experience-title">Experience</h2>
+          <p>Compact highlights from technical work connected to research, data, and web systems.</p>
+        </div>
+        <article class="experience-item">
+          <div>
+            <h3>Technical Research Assistant</h3>
+            <p>NYU Shanghai · 2025 - Present</p>
+          </div>
+          <ul>
+            <li>Integrated and validated satellite data from multiple catalogs and research sources.</li>
+            <li>Built interactive visualizations to help researchers explore historical satellite activity.</li>
+            <li>Supported migration from Wix to a custom Vercel-hosted platform.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="skills" class="section skills-section compact-section" aria-labelledby="skills-title">
+        <div class="section-topline">
+          <h2 id="skills-title">Skills</h2>
+          <p>Tools and languages I can discuss through coursework, research, and project work.</p>
+        </div>
+        <div class="skill-groups" aria-label="Technical skills">
+          <div>
+            <h3>Languages</h3>
+            <p>Python · TypeScript · JavaScript · SQL · Kotlin · C/C++</p>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <p>React · Next.js · Jetpack Compose · Flask</p>
+          </div>
+          <div>
+            <h3>Data</h3>
+            <p>Pandas · NumPy · MySQL · Plotly.js · GeoJSON</p>
+          </div>
+          <div>
+            <h3>Tools / Cloud</h3>
+            <p>Git · Vercel · Android Studio · Room · TensorFlow Lite</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section compact-section" aria-labelledby="about-title">
+        <div class="section-topline">
+          <h2 id="about-title">About</h2>
+          <p>
+            I am a recent computer science graduate interested in software that
+            makes complex systems easier to use. My projects span data
+            visualization, web applications, mobile accessibility, and robotics.
+            I like work that combines clear user interfaces with thoughtful
+            backend or data architecture.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section compact-section" aria-labelledby="contact-title">
         <div class="contact-card">
           <h2 id="contact-title">Let's connect.</h2>
           <p>
-            I'm open to software engineering, data visualization, interactive
-            media, and robotics opportunities.
+            I'm currently looking for early-career software engineering
+            opportunities.
           </p>
           <div class="contact-links" aria-label="Contact links">
             <a href="mailto:hello@example.com">Email</a>
@@ -239,6 +287,5 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="script.js"></script>
   </body>
 </html>

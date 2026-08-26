@@ -130,18 +130,18 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(260px, 360px);
-  gap: clamp(34px, 7vw, 96px);
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 340px);
+  gap: clamp(32px, 5.5vw, 76px);
   align-items: center;
   min-width: 0;
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
 .hero-copy {
   min-width: 0;
   width: 100%;
-  max-width: 680px;
+  max-width: 860px;
 }
 
 .role-label {
@@ -176,8 +176,8 @@ h2 {
 }
 
 h1 {
-  max-width: 680px;
-  font-size: clamp(3.2rem, 6.1vw, 5.5rem);
+  max-width: 860px;
+  font-size: clamp(3rem, 5.4vw, 4.9rem);
   font-weight: 850;
   line-height: 0.94;
   overflow-wrap: break-word;
@@ -185,7 +185,11 @@ h1 {
 }
 
 h1 span {
-  display: block;
+  display: inline;
+}
+
+h1 span + span::before {
+  content: " ";
 }
 
 h2 {
@@ -1311,6 +1315,14 @@ h3 {
     max-width: min(100%, 340px);
     font-size: clamp(2.35rem, 9vw, 2.75rem);
     line-height: 0.98;
+  }
+
+  h1 span {
+    display: block;
+  }
+
+  h1 span + span::before {
+    content: "";
   }
 
   .tech-strip {

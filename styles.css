@@ -817,9 +817,9 @@ h3 {
 
 .skill-groups {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  width: min(100%, 1080px);
+  grid-template-columns: 1fr;
+  gap: 12px;
+  width: min(100%, 760px);
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;

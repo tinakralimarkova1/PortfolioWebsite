@@ -767,10 +767,14 @@ h3 {
   display: block;
 }
 
-.experience-section h2,
+.experience-section h2 {
+  text-align: center;
+}
+
 .about-section h2,
 .skills-section h2 {
   font-size: clamp(1.75rem, 3vw, 2.55rem);
+  text-align: center;
 }
 
 .experience-item {
@@ -782,6 +786,7 @@ h3 {
 
 .experience-item h3 {
   font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  text-align: center;
 }
 
 .experience-item p {
@@ -789,14 +794,15 @@ h3 {
   color: var(--muted);
   font-size: 0.95rem;
   font-weight: 650;
+  text-align: center;
 }
 
 .experience-item ul {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
-  padding-left: 1.1rem;
-  margin: 0;
+  /* padding-left: 1.1rem; */
+  padding-inline: 8rem;
+  margin: 10px;
   color: var(--muted);
   font-size: 0.98rem;
 }
@@ -804,32 +810,38 @@ h3 {
 .about-section .section-topline p {
   max-width: 1080px;
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .skill-groups {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  width: min(100%, 1080px);
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .skill-groups div {
-  display: grid;
-  grid-template-columns: minmax(130px, 0.26fr) minmax(0, 1fr);
-  gap: 18px;
   border-top: 1px solid rgba(20, 20, 20, 0.18);
-  padding-top: 12px;
+  padding-top: 14px;
+  text-align: center;
 }
 
 .skill-groups h3 {
   margin: 0;
   font-size: 0.98rem;
+  text-align: center;
 }
 
 .skill-groups p {
   margin: 0;
   color: var(--muted);
   font-size: 0.98rem;
+  text-align: center;
 }
 
 .tabs {

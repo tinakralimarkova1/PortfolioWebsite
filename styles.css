@@ -1348,6 +1348,31 @@ h3 {
   font-size: 0.82rem;
 }
 
+.linkedin-demo-frame {
+  width: min(100%, 560px);
+  justify-self: start;
+}
+
+.linkedin-demo-frame iframe {
+  display: block;
+  width: 100%;
+  min-height: 399px;
+  border: 1px solid rgba(20, 20, 20, 0.16);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.linkedin-demo-frame p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.linkedin-demo-frame a {
+  font-weight: 700;
+}
+
 .project-detail-copy ul {
   display: grid;
   gap: 12px;

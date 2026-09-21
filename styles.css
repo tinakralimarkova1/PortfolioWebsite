@@ -786,6 +786,12 @@ h3 {
   min-width: 0;
 }
 
+.about-section p {
+  font-size: x-large;
+  text-align: right;
+
+}
+
 .experience-item {
   display: grid;
   gap: 18px;

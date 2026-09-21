@@ -1216,7 +1216,7 @@ h3 {
 }
 
 .project-detail-heading h1 {
-  font-size: clamp(3.5rem, 8vw, 6.4rem);
+  font-size: clamp(2.45rem, 5.6vw, 4.5rem);
   overflow-wrap: normal;
   word-break: normal;
   text-transform: none;

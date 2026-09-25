@@ -670,6 +670,11 @@ h3 {
   font-size: 0.98rem;
 }
 
+.experience-item .satellite-experience-list {
+  font-size: clamp(1.18rem, 2.2vw, 1.47rem);
+  line-height: 1.55;
+}
+
 .about-section p {
   max-width: 560px;
   margin-top: 20px;

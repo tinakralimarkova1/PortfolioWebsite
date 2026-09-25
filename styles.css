@@ -648,14 +648,14 @@ h3 {
 }
 
 .experience-item h3 {
-  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  font-size: clamp(1.65rem, 2.7vw, 2.18rem);
   text-align: center;
 }
 
 .experience-item p {
   margin: 6px 0 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: clamp(1.18rem, 2vw, 1.43rem);
   font-weight: 650;
   text-align: center;
 }
